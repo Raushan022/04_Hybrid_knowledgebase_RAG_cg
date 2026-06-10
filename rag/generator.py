@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 
 from langchain_openai import ChatOpenAI
+from config.settings import MODEL_NAME
 
 load_dotenv()
 
@@ -10,7 +11,7 @@ def generate_answer(
 ) -> str: 
    
    llm = ChatOpenAI(
-      model="gpt-4o-mini"
+      model=MODEL_NAME
    )
 
    prompt = f"""

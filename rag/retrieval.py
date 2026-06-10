@@ -1,10 +1,12 @@
 from langchain_core.documents import Document
 from langchain_community.vectorstores import FAISS
 
+from config.settings import TOP_K
+
 def retrieve_documents(
       vector_store: FAISS,
       query: str,
-      k: int=20
+      k: int=TOP_K
 ) -> list[Document]:
    
    if not query.strip():

@@ -1,0 +1,5 @@
+CHUNK_SIZE = 1000
+CHUNK_OVERLAP = 200
+TOP_K = 12
+VECTOR_STORE_PATH = "faiss_index"
+MODEL_NAME = "gpt-4o-mini"
